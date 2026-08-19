@@ -1,3 +1,9 @@
+from dotenv import load_dotenv
 from split_settings.tools import include
 
-include("base.py")
+load_dotenv()
+
+include(
+    "base.py",
+    "database.py",
+)
